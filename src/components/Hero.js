@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../components/navbar/Navbar";
 import heroimage from "../images/web-dev.svg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -21,8 +22,8 @@ const Hero = () => {
                 who deliver best and scalable software for your business.
               </div>
               <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
-                <a
-                  href="/contact"
+                <Link
+                  to="/contact"
                   className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center  px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:mb-0"
                 >
                   Contact Us
@@ -38,13 +39,10 @@ const Hero = () => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
-            <div
-              className="flex lg:justify-end w-full lg:w-1/2"
-               
-            >
+            <div className="flex lg:justify-end w-full lg:w-1/2">
               <img
                 alt="card img"
                 className="rounded-t float-right duration-1000 w-full"

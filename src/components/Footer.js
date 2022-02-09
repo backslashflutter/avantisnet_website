@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
-   return (
+  return (
     <>
       <footer>
         <div className="footer max-w-full mx-auto px-4 sm:px-6 bg-gray-100 border-t border-b py-30">
@@ -31,7 +31,10 @@ const Footer = () => {
                   </span>
                 </a>
                 <div className="text-base text-left font-regular text-gray-600">
-                  <p>AVANTIS NETWORK is a team of experienced mobile and web developers</p>
+                  <p>
+                    AVANTIS NETWORK is a team of experienced mobile and web
+                    developers
+                  </p>
                 </div>
               </div>
             </div>

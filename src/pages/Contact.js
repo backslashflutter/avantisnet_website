@@ -6,7 +6,7 @@ import emailjs from 'emailjs-com';
 import Notiflix from 'notiflix';
 
 const Contact = () => {
-    useDocTitle('MLD | Molad e Konsult - Send us a message')
+    useDocTitle('AvantisNet | Best Business Consultancy Agency In Canada')
     function sendEmail(e) {
         e.preventDefault();
         emailjs.sendForm('service_9haj7mn', 'template_ly8n4fr', e.target, 'user_NVIt6SoFKGxsQ09oddCd8')

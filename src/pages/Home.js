@@ -4,27 +4,42 @@ import Intro from "../components/Intro";
 import Services from "../components/Services";
 import Clients from "../components/Clients";
 import Portfolio from "../components/Portfolio";
-import CallToAction from "../components/CallToAction"; 
+import CallToAction from "../components/CallToAction";
 import Footer from "../components/Footer";
+import { client } from "../Client";
+import Notices from "../components/notices/Notices";
+class Home extends React.Component {
+  state = {
+    notices: [],
+  };
 
- 
+  // all calls are made inside this
+  componentDidMount() {
+    client
+      .getEntries()
+      .then((response) => {
+        this.setState({
+          notices: response.items,
+        });
+        console.log(response);
+      })
+      .catch(console.error);
+  }
 
+  render() {
+    return (
+      <>
+        <Hero />
+        <Intro />
+        <Services />
 
-const Home = () => {
-  return (
-    <>
-      <Hero />
-      <Intro />
-      <Services/>
-      <Clients />
-      <Portfolio />
-      <CallToAction/>
-      <Footer/>
-
-      
-     
-    </>
-  );
-};
-
+        <Notices notices={this.state.notices} />
+        <Clients />
+        <Portfolio />
+        <CallToAction />
+        <Footer />
+      </>
+    );
+  }
+}
 export default Home;
