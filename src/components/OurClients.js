@@ -1,8 +1,8 @@
 import React from "react";
-import google from "../images/clients/google.png";
-import facebook from "../images/clients/facebook.png";
-import apple from "../images/clients/ibm.png";
-import instagram from "../images/clients/instagram.png";
+import client_logo_1 from '../images/clients/client_logo_1.png';
+import client_logo_2 from '../images/clients/client_logo_2.png';
+import client_logo_3 from '../images/clients/client_logo_3.png';
+
 
 const clientImage = {
   height: "8rem",
@@ -23,33 +23,28 @@ const Clients = () => {
         </div>
 
         <div className="p-10">
-          <div className="grid sm:grid-cols-4 lg:grid-cols-4">
+          <div className="grid sm:grid-cols-3 lg:grid-cols-3">
             <div
               style={clientImage}
               className="overflow-hidden flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100 w-1/6"
             >
-              <img src={google} alt="client" />
+              <img src={client_logo_1} alt="client" />
             </div>
             <div
               style={clientImage}
               className="overflow-hidden flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100 w-1/6"
             >
-              <img src={facebook} alt="client" />
+              <img src={client_logo_2} alt="client" />
             </div>
 
             <div
               style={clientImage}
               className="overflow-hidden p-3 flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100 w-1/6"
             >
-              <img src={apple} alt="client" />
+              <img src={client_logo_3} alt="client" />
             </div>
 
-            <div
-              style={clientImage}
-              className="overflow-hidden p-3 flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100 w-1/6"
-            >
-              <img src={instagram} alt="client" />
-            </div>
+
           </div>
         </div>
       </section>

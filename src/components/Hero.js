@@ -11,10 +11,10 @@ const Hero = () => {
           <NavBar />
         </div>
 
-        <div className="m-auto mt-10 max-full sm:mt- lg:mt-4 p-2 md:p-12 mt-20 h-5/6">
+        <div className="m-auto mt-20 max-full sm:mt- lg:mt-4 p-2 md:p-12  h-5/6">
           <div className="flex flex-col lg:flex-row py-8 justify-between text-center lg:text-left">
             <div className="lg:w-1/2 flex flex-col lg:mx-4 justify-center">
-              <h1 className="mb-5 md:text-5xl text-3xl font-bold text-blue-900">
+              <h1 className="mb-5 md:text-5xl text-3xl font-bold text-blue-900 md:pt-20">
                 We build digital solutions for your business
               </h1>
               <div className="text-base font-semibold tracking-tight mb-5 text-gray-600">
