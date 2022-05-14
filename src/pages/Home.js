@@ -16,7 +16,10 @@ class Home extends React.Component {
   // all calls are made inside this
   componentDidMount() {
     client
-      .getEntries()
+      .getEntries({
+        content_type: 'avantisNet',
+        order: 'sys.createdAt'
+      })
       .then((response) => {
         this.setState({
           notices: response.items,

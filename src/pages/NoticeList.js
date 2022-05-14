@@ -11,13 +11,14 @@ class NoticeList extends React.Component {
 
   componentDidMount() {
     client
-      .getEntries()
+      .getEntries({content_type: "avantisNet", order:"sys.createdAt"})
       .then((response) => {
         this.setState({
           notices: response.items,
         });
+      
       })
-      .catch(console.error);
+      
   }
 
   render() {
