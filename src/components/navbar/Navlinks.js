@@ -33,16 +33,9 @@ const NavLinks = () => {
       >
         Portfolio
       </HashLink>
-      <HashLink
-        className="px-4 ml-0 mr-0 font-semibold duration-100 md:ml-12 md:mr-3 lg:mr-8 transition-color hover:text-indigo-600"
-        smooth
-        to="/notices"
-      >
-        Notices
-      </HashLink>
 
       <HashLink
-        className="bg-blue-800 px-3 ml-0 mr-0 font-medium duration-100  text-white text-base lg:mr-6 transition-color hover:text-white rounded-xl  w-full  py-3 my-4  shadow-xl sm:w-auto sm:mb-0"
+        className="hover:bg-blue-800 bg-blue-900 px-3 ml-0 mr-0 font-medium duration-100  text-white text-base lg:mr-6 transition-color hover:text-white rounded-xl  w-full  py-3 my-4  shadow-xl sm:w-auto sm:mb-0 md:my-4 md:text-center md:m-10"
         smooth
         to="/contact"
       >

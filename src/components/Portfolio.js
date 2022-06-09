@@ -40,6 +40,7 @@ const Portfolio = () => {
                   <p className="text-left">
                     Todo App created in Flutter and Firebase Framework.
                   </p>
+
                   <p className="text-left pt-2">
                     Through this app, you can easily make Todo and keep check of
                     your schedule.

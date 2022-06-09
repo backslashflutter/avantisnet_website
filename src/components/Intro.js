@@ -9,7 +9,7 @@ const Intro = () => {
           className="flex flex-col-reverse lg:flex-row py-8 justify-between lg:text-left"
           data-aos="fade-up"
         >
-          <div className="lg:w-1/2 flex flex-col lg:mx-4 justify-center">
+          <div className="lg:w-1/2 md:justify-items-center flex flex-col lg:mx-4 justify-center">
             <img alt="card img" className="rounded-t float-right" src={img} />
           </div>
           <div
@@ -18,17 +18,15 @@ const Intro = () => {
             data-aos-delay="500"
           >
             <h3 className="text-3xl text-blue-900 font-bold sm:text-2xl">
-              We're a local GTA IT consulting company that will guide you to your success
-
+              We're a local GTA IT consulting company that will guide you to
+              your success
             </h3>
             <div>
               <p className="my-3 text-base text-gray-600 font-semibold">
-               Our team is well vast in software development and is ready to develop the applications of your choice. 
-
-               </p>
+                Our team is well vast in software development and is ready to
+                develop the applications of your choice.
+              </p>
             </div>
-
-            
           </div>
         </div>
       </div>
@@ -37,4 +35,3 @@ const Intro = () => {
 };
 
 export default Intro;
-

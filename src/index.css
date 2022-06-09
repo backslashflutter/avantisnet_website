@@ -18,3 +18,19 @@ body {
   background: url(./images/footer.svg) top center no-repeat;
   background-size: cover;
 }
+
+.tag {
+  @apply text-xs items-center font-bold uppercase px-3 py-2 mb-5 bg-gray-900 text-gray-100 rounded-sm mr-2;
+}
+
+.card {
+  @apply rounded-lg shadow-xl hover:shadow-2xl overflow-hidden hover:-translate-y-1 duration-300;
+}
+
+.badge-1 {
+  @apply items-center rounded-full text-2xl py-2 px-12 lg:mt-3 flex justify-center cursor-pointer border border-gray-300 hover:border-sky-300 hover:bg-sky-300 hover:text-white;
+}
+
+.badge-2 {
+  @apply py-2 px-7 border bg-blue-900 border-gray-300 rounded-full text-base font-medium hover:bg-blue-800  text-white hover:text-white transition;
+}

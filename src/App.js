@@ -4,8 +4,6 @@ import Home from "./pages/Home";
 import "./App.css";
 import Contact from "./pages/Contact";
 import { useDocTitle } from "./components/CustomHooks";
-import NoticeList from './pages/NoticeList';
-
 
 function App() {
   useDocTitle("AvantisNet | Best Business Consultancy Agency In Canada");
@@ -14,7 +12,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/notices" element={<NoticeList/>}/>
       </Routes>
     </Router>
   );

@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="m-auto mt-20 max-full sm:mt- lg:mt-4 p-2 md:p-12  h-5/6">
           <div className="flex flex-col lg:flex-row py-8 justify-between text-center lg:text-left">
             <div className="lg:w-1/2 flex flex-col lg:mx-4 justify-center">
-              <h1 className="leading-5 mb-5 md:text-5xl text-3xl  font-bold text-blue-900 md:pt-20 height ">
+              <h1 className="leading-relaxed lg:leading-[1.16] md:leading-snug my-10 md:my-4 md:text-5xl lg:text-5xl text-3xl font-bold text-blue-900 md:pt-20">
                 We build digital solutions for your business
               </h1>
               <div className="text-base font-semibold tracking-tight mb-5 text-gray-600">
@@ -42,7 +42,7 @@ const Hero = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex lg:justify-end w-full lg:w-1/2">
+            <div className="flex lg:justify-end w-full lg:w-1/2 md:max-w">
               <img
                 alt="card img"
                 className="rounded-t float-right duration-1000 w-full"
